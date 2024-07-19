@@ -1,4 +1,5 @@
 import { Grid, GridItem, Heading, Flex, Image, Text, Box } from '@chakra-ui/react'
+import { BsBoxArrowUpRight } from "react-icons/bs";
 import { css } from '@emotion/react'
 import project from '../data/data.json';
 
@@ -12,7 +13,7 @@ function Project() {
 	// change color, too distracting
 	let data = project
 
-	const [sel, setSel] = useState(1)
+	const [sel, setSel] = useState(0)
 	return (
 		<Grid
 			h='100vh'
@@ -81,12 +82,15 @@ function Project() {
 				>
 					<GridItem rowSpan={2} >
 						<Flex flexDirection={"column"} width={"100%"} height={'100%'} justifyContent={"end"} alignItems={"start"}>
-							<Box bg={"#000000"} width={"50%"} height={"5%"} />
+							<a href='https://google.com'>
+							<BsBoxArrowUpRight fontSize={"sm"} />
+							</a>
+							{/* <Box  /> */}
 						</Flex>
 					</GridItem>
 					<GridItem rowSpan={12} colSpan={6} my="4">
 						<Flex flexDirection={"column"} height={'100%'} justifyContent={"start"} alignItems={"end"} fontSize='sm'>
-							<Text textAlign={'left'}>Elit laboris culpa sunt nostrud est. Laboris quis anim fugiat duis dolor tempor. Officia aliqua ut ea sunt dolor deserunt cupidatat deserunt do anim eiusmod. Ea nulla consequat duis excepteur non fugiat esse ex sit. Qui commodo consectetur do labore ex occaecat aute. Nulla aliquip consectetur elit exercitation veniam. Elit fugiat culpa adipisicing eiusmod pariatur sunt anim quis.</Text>
+							<Text textAlign={'justify'}>Elit laboris culpa sunt nostrud est. Laboris quis anim fugiat duis dolor tempor. Officia aliqua ut ea sunt dolor deserunt cupidatat deserunt do anim eiusmod. Ea nulla consequat duis excepteur non fugiat esse ex sit. Qui commodo consectetur do labore ex occaecat aute. Nulla aliquip consectetur elit exercitation veniam. Elit fugiat culpa adipisicing eiusmod pariatur sunt anim quis.</Text>
 						</Flex>
 					</GridItem>
 
@@ -96,11 +100,6 @@ function Project() {
 			{/* show swiss style box and circle when change */}
 			{/* or parallax on box */}
 
-			{/* <GridItem className='project-item' rowSpan={4} colSpan={2}  alignItems={"end"}>
-				<Flex flexDirection={"column"} height={'100%'} alignItems={"end"}>
-					<Box bg={"#000000"} width={"50%"} height={"50%"} borderRadius={"0 0 0 100%"} />
-				</Flex>
-			</GridItem> */}
 			{data.map((item, i) => (
 				<GridItem className='project-item' rowSpan={2} colSpan={2} px="4">
 					<button onClick={() => setSel(i)}>

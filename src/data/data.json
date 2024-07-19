@@ -1,0 +1,26 @@
+[
+	{
+			"title": "UMKM Cashier App",
+			"desc": "mobile apps, flutter, laravel, mysql, dart"
+	},
+	{
+			"title": "SMAN 3 Kerinci Profile",
+			"desc": "website, company profile, laravel"
+	},
+	{
+			"title": "UnilaHub",
+			"desc": "mobile apps, flutter, laravel, mysql, dart"
+	},
+	{
+			"title": "Himakom Showcase",
+			"desc": "website, django, bootstrap, mysql, dart"
+	},
+	{
+			"title": "Erha Chatbot",
+			"desc": "mobile apps, flutter, laravel, mysql, dart"
+	},
+	{
+			"title": "Simpeg",
+			"desc": "mobile apps, flutter, laravel, mysql, dart"
+	}
+]

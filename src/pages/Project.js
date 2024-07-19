@@ -58,7 +58,7 @@ function Project() {
 								height={'100%'}
 								width={'100%'}
 								objectFit='cover'
-								src='https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/06/10_Protagonist-1.png'
+								// src='https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/06/10_Protagonist-1.png'
 								alt='Project 1'
 								css={css`
 										filter: grayscale(100%);

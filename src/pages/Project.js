@@ -22,24 +22,32 @@ function Project() {
 			templateRows='repeat(14, 1fr)'
 			templateColumns='repeat(10, 1fr)'
 			gap={1}
-			bg={'#E8F9FD'}
+			bg={'#EEEDEB'}
 			color={'#000000'}
 			pb={'16'}
 			pl={'8'}
-			pr={'24'}
-			textTransform={'lowercase'}
+			pr={'40'}
 		>
 			<GridItem className='title' rowSpan={14} colSpan={2} mb="4">
-				<Flex height={'100%'} justifyContent={"end"} alignItems={'end'} color={"#FF1E00"}>
-					<Heading size='4xl' textAlign="right" lineHeight={'1'} textTransform={'uppercase'} css={css`
+				<Grid
+					h='100%'
+					w={'100%'}
+					templateRows='repeat(14, 1fr)'
+					templateColumns='repeat(2, 1fr)'
+					gap={1}
+				>
+					<GridItem className='title' rowSpan={10} colSpan={2} mb="4">
+						<Flex height={'100%'} justifyContent={"end"} alignItems={'end'} color={"#000000"}>
+							<Heading size='xl' textAlign="right" lineHeight={'1'} textTransform={'uppercase'} css={css`
 						writing-mode:vertical-lr;
-						`} transform={"rotate(180deg)"} color={"#000000"}>naufal</Heading>
-					<Heading size='4xl' textAlign="left" lineHeight={'1.5'} textTransform={'uppercase'} css={css`
+						`} transform={"rotate(180deg)"} color={"#FF1E00"}>naufal</Heading>
+							<Heading size='xl' textAlign="left" lineHeight={'1.5'} textTransform={'uppercase'} css={css`
 						writing-mode:vertical-lr;
-						`} transform={"rotate(180deg)"} bg={"#000000"} h={"100%"}>anbial falah</Heading>
-				</Flex>
+						`} transform={"rotate(180deg)"} h={"100%"}>anbial falah</Heading>
+						</Flex>
+					</GridItem>
+				</Grid>
 			</GridItem>
-
 			<GridItem className='show-project' rowSpan={10} colSpan={6} >
 				<Grid
 					templateRows='repeat(10, 1fr)'
@@ -84,25 +92,10 @@ function Project() {
 							} borderRadius={"0 0 0 0"} colorScheme='black' variant='outline' aria-label='Hackerrank' icon={<LiaHackerrank />} /></a>
 						</Flex>
 
-						{/* <Flex flexDirection={"row"} h={'100%'} justifyContent={"end"} alignItems={"end"}>
-							<Flex flexDirection={"column"} height={'100%'} justifyContent={"end"} pr={"4"}>
-								<Text fontWeight={'bold'} textAlign={'end'}>{data[sel]["title"]}</Text>
-								<Text textAlign={'end'}>{data[sel]["tags"]}</Text>
-							</Flex>
-
-							<IconButton css={
-								css`
-									&:hover{
-										background-color: #000000;
-										color: #E8F9FD;
-									}
-								`
-							} borderRadius={"0 0 0 0"} colorScheme='black' variant='outline' aria-label='Linkedin' icon={<BsBoxArrowUpRight />} />
-						</Flex> */}
 					</GridItem>
 
 					<GridItem className='project-detail' bg={'#2F3645'} rowSpan={8} colSpan={6} m="4">
-						<Flex flexDirection={"column"} height={'100%'} justifyContent={"center"}>
+						<Flex flexDirection={"column"} height={'100%'} justifyContent={"center"} border={"solid 1px"}>
 							<Image
 								height={'100%'}
 								width={'100%'}
@@ -155,8 +148,6 @@ function Project() {
 							</Button>
 
 						</Flex>
-						{/* <Flex flexDirection={"column"} width={"100%"} height={'100%'} justifyContent={"end"} alignItems={"start"}>
-						</Flex> */}
 					</GridItem>
 					<GridItem rowSpan={8} colSpan={1} my="4">
 						<Flex flexDirection={"column"} height={'20%'} justifyContent={"start"} alignItems={"start"} fontSize='sm'>
@@ -172,9 +163,9 @@ function Project() {
 					</GridItem>
 				</Grid>
 			</GridItem>
-			{/* <GridItem className='profile-detail' bg={''} rowSpan={14} colSpan={2} ml="4" mb="4" /> */}
 			{/* show swiss style box and circle when change */}
 			{/* or parallax on box */}
+
 
 			{data.map((item, i) => (
 				<GridItem className='project-item' rowSpan={2} colSpan={2} px="4">

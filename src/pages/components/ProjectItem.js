@@ -5,7 +5,7 @@ import { css } from '@emotion/react'
 export default function ProjectItem(props) {
 	let align_title = 'left'
 	let align_tags = 'left'
-	let bg = '#E8F9FD'
+	let bg = '#EEEDEB'
 	let color = '#000000'
 	let p = 0
 	let m = 0

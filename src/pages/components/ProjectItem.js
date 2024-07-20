@@ -17,12 +17,12 @@ export default function ProjectItem(props) {
 	}
 	
 	return (
-		<Flex flexDirection={"column"} height={'100%'} mr={m} justifyContent={"start"} p={p} bg={bg} color={color} css={css`
+		<Flex flexDirection={"column"} height={'100%'} mr={m} justifyContent={"start"} py={p} px={p+1} bg={bg} color={color} css={css`
 							transition: background-color 0.3s, color 0.3s, padding 0.3s;
 							&:hover{
 								background-color: #000000;
 								color: #E8F9FD;
-								padding: 8px;
+								padding: 8px 12px;
 								}
 							`}>
 			<Text textAlign={align_title}>{props.project.title}</Text>

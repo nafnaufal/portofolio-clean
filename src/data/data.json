@@ -1,26 +1,56 @@
 [
 	{
-			"title": "UMKM Cashier App",
-			"desc": "mobile apps, flutter, laravel, mysql, dart"
+		"title": "KassaKu",
+		"tags": "mobile apps, flutter, laravel, mysql, dart, php",
+		"desc": "Aliquip veniam sit est anim eiusmod amet velit nostrud qui. Ad duis amet dolore est ullamco enim ea et. Reprehenderit nisi ipsum incididunt ullamco adipisicing Lorem pariatur dolore do culpa velit nulla irure ipsum. Fugiat duis sunt do cillum cillum.",
+		"img": [
+			""
+		],
+		"link": "https://google.com/"
 	},
 	{
-			"title": "SMAN 3 Kerinci Profile",
-			"desc": "website, company profile, laravel"
+		"title": "SMAN 3 Kerinci Profile",
+		"tags": "website, laravel, mysql, bootstrap",
+		"desc": "Aliquip veniam sit est anim eiusmod amet velit nostrud qui. Ad duis amet dolore est ullamco enim ea et. Reprehenderit nisi ipsum incididunt ullamco adipisicing Lorem pariatur dolore do culpa velit nulla irure ipsum. Fugiat duis sunt do cillum cillum.",
+		"img": [
+			""
+		],
+		"link": "https://google.com/"
 	},
 	{
-			"title": "UnilaHub",
-			"desc": "mobile apps, flutter, laravel, mysql, dart"
+		"title": "UnilaHub",
+		"tags": "mobile apps, flutter, laravel, mysql, dart, php",
+		"desc": "Aliquip veniam sit est anim eiusmod amet velit nostrud qui. Ad duis amet dolore est ullamco enim ea et. Reprehenderit nisi ipsum incididunt ullamco adipisicing Lorem pariatur dolore do culpa velit nulla irure ipsum. Fugiat duis sunt do cillum cillum.",
+		"img": [
+			""
+		],
+		"link": "https://google.com/"
 	},
 	{
-			"title": "Himakom Showcase",
-			"desc": "website, django, bootstrap, mysql, dart"
+		"title": "Himakom Showcase",
+		"tags": "website, django, mysql, python, bootstrap",
+		"desc": "Aliquip veniam sit est anim eiusmod amet velit nostrud qui. Ad duis amet dolore est ullamco enim ea et. Reprehenderit nisi ipsum incididunt ullamco adipisicing Lorem pariatur dolore do culpa velit nulla irure ipsum. Fugiat duis sunt do cillum cillum.",
+		"img": [
+			""
+		],
+		"link": "https://google.com/"
 	},
 	{
-			"title": "Erha Chatbot",
-			"desc": "mobile apps, flutter, laravel, mysql, dart"
+		"title": "Simpeg",
+		"tags": "website, code igniter, mysql, php, bootstrap",
+		"desc": "Aliquip veniam sit est anim eiusmod amet velit nostrud qui. Ad duis amet dolore est ullamco enim ea et. Reprehenderit nisi ipsum incididunt ullamco adipisicing Lorem pariatur dolore do culpa velit nulla irure ipsum. Fugiat duis sunt do cillum cillum.",
+		"img": [
+			""
+		],
+		"link": "https://google.com/"
 	},
 	{
-			"title": "Simpeg",
-			"desc": "mobile apps, flutter, laravel, mysql, dart"
+		"title": "Project Monitoring System",
+		"tags": "website, code igniter, mysql, php, bootstrap",
+		"desc": "Aliquip veniam sit est anim eiusmod amet velit nostrud qui. Ad duis amet dolore est ullamco enim ea et. Reprehenderit nisi ipsum incididunt ullamco adipisicing Lorem pariatur dolore do culpa velit nulla irure ipsum. Fugiat duis sunt do cillum cillum.",
+		"img": [
+			""
+		],
+		"link": "https://google.com/"
 	}
 ]

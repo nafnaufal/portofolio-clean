@@ -30,7 +30,7 @@ function Project() {
 				<Flex height={'100%'} justifyContent={"end"} alignItems={'end'} color={"#FF1E00"}>
 					<Heading size='4xl' textAlign="right" lineHeight={'1'} textTransform={'uppercase'} css={css`
 						writing-mode:vertical-lr;
-						`} transform={"rotate(180deg)"} >naufal</Heading>
+						`} transform={"rotate(180deg)"} color={"#000000"}>naufal</Heading>
 					<Heading size='4xl' textAlign="left" lineHeight={'1.5'} textTransform={'uppercase'} css={css`
 						writing-mode:vertical-lr;
 						`} transform={"rotate(180deg)"} bg={"#000000"} h={"100%"}>anbial falah</Heading>
@@ -47,8 +47,8 @@ function Project() {
 
 					<GridItem className='show-project' rowSpan={2} colSpan={6} mx="4">
 						<Flex flexDirection={"column"} height={'100%'} justifyContent={"end"}>
-							<Text fontWeight={'bold'} textAlign={'end'}>sman 3 kerinci</Text>
-							<Text textAlign={'end'}>profile website, company profile, laravel</Text>
+							<Text fontWeight={'bold'} textAlign={'end'}>{data[sel]["title"]}</Text>
+							<Text textAlign={'end'}>{data[sel]["tags"]}</Text>
 						</Flex>
 					</GridItem>
 
@@ -58,8 +58,8 @@ function Project() {
 								height={'100%'}
 								width={'100%'}
 								objectFit='cover'
-								// src='https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/06/10_Protagonist-1.png'
-								alt='Project 1'
+								src={data[sel]["img"][0]}
+								alt={data[sel]["title"]}
 								css={css`
 										filter: grayscale(100%);
 										transition: filter 0.3s;
@@ -80,7 +80,7 @@ function Project() {
 					height={"100%"}
 					width={"100%"}
 				>
-					<GridItem rowSpan={2} >
+					<GridItem rowSpan={2} colSpan={1}>
 						<Flex flexDirection={"column"} width={"100%"} height={'100%'} justifyContent={"end"} alignItems={"start"}>
 							<a href='https://google.com'>
 							<BsBoxArrowUpRight fontSize={"sm"} />
@@ -88,9 +88,14 @@ function Project() {
 							{/* <Box  /> */}
 						</Flex>
 					</GridItem>
-					<GridItem rowSpan={12} colSpan={6} my="4">
+					<GridItem rowSpan={8} colSpan={1} my="4">
 						<Flex flexDirection={"column"} height={'100%'} justifyContent={"start"} alignItems={"end"} fontSize='sm'>
-							<Text textAlign={'justify'}>Elit laboris culpa sunt nostrud est. Laboris quis anim fugiat duis dolor tempor. Officia aliqua ut ea sunt dolor deserunt cupidatat deserunt do anim eiusmod. Ea nulla consequat duis excepteur non fugiat esse ex sit. Qui commodo consectetur do labore ex occaecat aute. Nulla aliquip consectetur elit exercitation veniam. Elit fugiat culpa adipisicing eiusmod pariatur sunt anim quis.</Text>
+							<Text textAlign={'justify'}>{data[sel]["desc"]}</Text>
+						</Flex>
+					</GridItem>
+					<GridItem rowSpan={4} colSpan={1} border={"solid 1px"}>
+						<Flex flexDirection={"column"} height={'100%'} justifyContent={"start"} alignItems={"end"} fontSize='sm'>
+							{/* <Text textAlign={'justify'}>{data[sel]["desc"]}</Text> */}
 						</Flex>
 					</GridItem>
 
